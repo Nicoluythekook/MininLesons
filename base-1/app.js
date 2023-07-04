@@ -36,7 +36,7 @@ minusBtn.onclick = function () {
 action = '-'
 }
 
-function printResult (result) {
+function printResult(result) {
     if (result < 0) {
         resultElement.style.color = 'red'
     } else {
@@ -58,7 +58,7 @@ function computeNumbersWithAction (inp1, inp2, actionSymbol) {
 }
 
 submitBtn.onclick = function () {
-const result = computeNumbersWithAction (inp1, inp2, actionSymbol)
+const result = computeNumbersWithAction(input1, input2, action)
     printResult(result)
 
    /* if (action === '+') {
