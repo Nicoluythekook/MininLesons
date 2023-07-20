@@ -36,7 +36,7 @@ fullBtn.onclick = bindMode('full')
 dateBtn.onclick = bindMode('date')
 timeBtn.onclick = bindMode('time')
 
-setInterval(update, 1000)
+setInterval(update, 100)
 update()
 function update() {
     output.textContent = format(mode)
