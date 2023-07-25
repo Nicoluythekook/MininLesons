@@ -1,3 +1,4 @@
+
 const person = {
 
     age: 26,
@@ -23,6 +24,8 @@ const person = {
     },
 
 }
+
+
 //person.address = undefined
 //console.log(person)
 
@@ -48,7 +51,7 @@ for(let key in person) {
 
 //Object.keys(person).forEach((keys) => {
    // console.log(person[keys])  })
-
+/*
  const logger = {
      keys() {
          console.log('Object keys:', Object.keys(this))
@@ -60,7 +63,29 @@ for(let key in person) {
          })
      },
  }
+
+ */
 //const bound = logger.keys.bind(person)
 //bound()
 //logger.keys.call(person, false)
 //logger.keys.apply(person, [false])
+
+// КЛАССЫ ДЖАВА СКРИПТ
+class Human {
+    isHuman = true
+}
+ class Person extends Human {
+     constructor(name, age) {
+         super()
+         this.name = name ?? 'Undefined name'
+         this.age = age ?? 'Undefined age'
+     }
+     sayHello() {
+         console.log('Hello from:', this.name)
+     }
+ }
+ const person1 = new Person('Niko', 26)
+ const person2 = new Person('Daria', 29)
+
+console.log(person1)
+person2.sayHello()
